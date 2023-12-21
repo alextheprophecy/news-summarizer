@@ -1,0 +1,12 @@
+.mapBox {
+    font-size: 5rem;
+    width: 75vw;
+    height: 75vh;
+    margin: auto;
+    text-align: center;
+    background-color: #505050;
+}
+
+path {
+    fill: #2a354d;
+}

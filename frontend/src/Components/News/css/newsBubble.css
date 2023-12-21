@@ -1,0 +1,59 @@
+.block {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(8px);
+    pointer-events: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: center;
+}
+
+.clickable {
+    width: 100%;
+    height: 100%;
+    flex: 1;
+    pointer-events: auto;
+}
+
+.container {
+    background-color: #4d2a36;
+    border-radius: 25px;
+    width: 90vw;
+    height: 75vh;
+
+    margin: 0 5vw 15px 5vw;
+}
+
+.newsText {
+    background-color: #231059;
+    padding: 20px;
+    text-align: center;
+    color:wheat;
+    font-family: "Berlin Sans FB", serif;
+    font-size: 1.75rem;
+}
+
+.alert-enter {
+    opacity: 0;
+    transform: scale(0.5);
+}
+
+.alert-enter-active {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 300ms, transform 300ms;
+}
+
+.alert-exit {
+    opacity: 1;
+}
+
+.alert-exit-active {
+    opacity: 0;
+    transform: scale(0.5);
+    transition: opacity 200ms, transform 500ms;
+}
